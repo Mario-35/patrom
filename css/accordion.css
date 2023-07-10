@@ -1,0 +1,61 @@
+
+  .patrom-tabs {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px var(--button-text-shadow);
+  }
+  
+  .patrom-tab {
+    width: 100%;
+    color: var(--text-color);
+    overflow: hidden;
+  }
+  .patrom-tab-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: var(--background-color);
+    font-weight: bold;
+    cursor: pointer;
+    /* Icon */
+  }
+  .patrom-tab-label:hover {
+    background: var(--background-color-cta);
+  }
+  .patrom-tab-label::after {
+    content: "❯";
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    transition: all 0.35s;
+  }
+  .patrom-tab-content {
+    max-height: 0;
+    padding: 0 12px;
+    color: var(--content-color);
+    background: var(--input-background);
+    transition: all 0.35s;
+  }
+  .patrom-tab-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    font-size: 0.75em;
+    background: var(--background-color);
+    cursor: pointer;
+  }
+  .patrom-tab-close:hover {
+    background: var(--background-color-cta);
+  }
+  
+  input:checked + .patrom-tab-label {
+    background: var(--background-color-cta);
+  }
+  input:checked + .patrom-tab-label::after {
+    transform: rotate(90deg);
+  }
+  input:checked ~ .patrom-tab-content {
+    max-height: 100vh;
+    padding: 12px;
+  }
+  

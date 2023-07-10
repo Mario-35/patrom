@@ -1,0 +1,122 @@
+ .patrom-row {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+ .patrom-rowWrap {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.patrom-col {
+  flex: 1 1 8%;
+  padding: 0.5px 3px;
+  box-sizing: border-box;
+}
+
+/* nested grids */
+.patrom-row .patrom-row, .patrom-row.nested {
+  flex: 1 1 auto;
+  margin-top: -0.5em;
+}
+
+/* full width grids */
+.patrom-row.wide-fit {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+/* center grids */
+.patrom-row.center {
+  justify-content: center;
+}
+
+.center .patrom-col {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+/* columns widths */
+
+.patrom-col-span-1 {
+  flex-basis: 8.3333%;
+}
+
+.patrom-col-span-2 {
+  flex-basis: 16.6666%; 
+}
+
+.patrom-col-span-3 {
+  flex-basis: 25%;
+}
+
+.patrom-col-span-4 {
+  flex-basis: 33.3333%;
+}
+
+.patrom-col-span-5 {
+  flex-basis: 41.6666%;
+}
+
+.patrom-col-span-6 {
+  flex-basis: 50%;
+}
+
+.patrom-col-span-7 {
+  flex-basis: 58.3333%;
+}
+
+.patrom-col-span-8 {
+  flex-basis: 66.6666%;
+}
+
+.patrom-col-span-9 {
+  flex-basis: 75%;
+}
+
+.patrom-col-span-10 {
+  flex-basis: 83.3333%;
+}
+
+.patrom-col-span-11 {
+  flex-basis: 91.6666%;
+}
+
+.patrom-col-span-12 {
+  flex-basis: 100%;
+}
+
+/* examples */
+
+.fixed-width {
+  flex: 0 0 500px;
+  background-color: rgba(255,0,0,0.1) !important;
+}
+
+@media all and (max-width: 568px) {
+  .patrom-col-span-1,
+  .patrom-col-span-2,
+  .patrom-col-span-3,
+  .patrom-col-span-4,
+  .patrom-col-span-5 {
+    flex-basis: 50%;
+  }
+
+  .patrom-col-span-6,
+  .patrom-col-span-7,
+  .patrom-col-span-8,
+  .patrom-col-span-9,
+  .patrom-col-span-10,
+  .patrom-col-span-11 {
+    flex-basis: 100%;
+  }
+
+  .nested .patrom-col {
+    flex-basis: 100%;
+  }
+  
+}
+

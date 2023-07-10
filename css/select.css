@@ -1,0 +1,15 @@
+.patrom-select {
+    border-radius: 3px;
+    background: var(--input-background);
+    background-image: none;
+    box-shadow: 0 0 0 1px var(--select-box-shadow);
+    border: none;
+    border-top: 2px solid var(--select-border-top);
+    color: var(--text-color);
+    text-shadow: 0 -1px 0 var(--select-text-shadow);
+    overflow: hidden;
+    font-size: var(--font-size);
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 7px;
+  }

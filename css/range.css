@@ -1,0 +1,86 @@
+  .range,
+  .patrom-range {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    vertical-align: top;
+    outline: none;
+  }
+  
+  .range__thumb,
+  .patrom-range::-moz-range-thumb {
+    cursor: pointer;
+  }
+  
+  .range__thumb--webkit,
+  .patrom-range::-webkit-slider-thumb {
+    cursor: pointer;
+  }
+  
+  .range:disabled,
+  .patrom-range:disabled {
+    opacity: 0.3;
+    cursor: default;
+    pointer-events: none;
+  }
+  
+  .patrom-range,
+  .patrom-range--vertical {
+    border-radius: 4px;
+    border: 1px solid var(--button-border-color);
+    background-color: var(--input-background);
+    height: 0.5rem;
+    border-radius: 15px;
+  }
+  
+  .patrom-range::-moz-range-track {
+    border-radius: 4px;
+    border: 1px solid var(--button-border-color);
+    background-color: var(--input-background);
+    height: 0.5rem;
+    border-radius: 15px;
+  }
+  
+  .patrom-range::-webkit-slider-thumb {
+    height: 1.313rem;
+    width: 0.75rem;
+    background-color: var(--background-color);
+    border: 1px solid var(--button-border-color);
+    border-radius: 4px;
+    box-shadow: inset 0 1px var(--button-box-shadow);
+  }
+  
+  .patrom-range::-moz-range-thumb {
+    height: 1.313rem;
+    width: 0.75rem;
+    background-color: var(--background-color);
+    border: 1px solid var(--button-border-color);
+    border-radius: 4px;
+    box-shadow: inset 0 1px var(--button-box-shadow);
+  }
+  
+  .patrom-range:focus::-webkit-slider-thumb {
+    border: 1px solid var(--border-blue);
+    box-shadow: inset 0 1px var(--box-shadow), 0 0 0 2px var(--box-shadow-blue);
+  }
+  
+  .patrom-range:focus::-moz-range-thumb {
+    border: 1px solid var(--border-blue);
+    box-shadow: inset 0 1px var(--box-shadow), 0 0 0 2px var(--box-shadow-blue);
+  }
+  
+  .patrom-range:active::-webkit-slider-thumb {
+    border: 1px solid var(--button-border-color);
+    box-shadow: inset 0 1px var(--button-box-shadow);
+  }
+  
+  .patrom-range:active::-moz-range-thumb {
+    border: 1px solid var(--button-border-color);
+    box-shadow: inset 0 1px var(--button-box-shadow);
+  }
+  

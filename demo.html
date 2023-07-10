@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>patrom</title>
+    <meta name="viewport" content="user-scalable=no,initial-scale = 1.0,maximum-scale = 1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+  </head>
+  <body class="dark">
+    <div id="wrapper">
+      <div class="max-width">
+        <div id="sideNav">
+          <h1>patrom</h1>
+          <p>CSS for mario35 apps</p>
+          <label class="patrom-switch">
+            <input id="theme" type="checkbox" class="patrom-switch__input" checked>
+            <div class="patrom-switch__theme"></div>
+          </label>
+          <div id="pageNav">
+            <ul>
+              <li>
+                <a href="#button-bar">Button Bar</a>
+              </li>
+              <li>
+                <a href="#large-buttonbar">Large Button Bar</a>
+              </li>
+              <li>
+                <a href="#button">Button</a>
+              </li>
+              <li>
+                <a href="#quiet-button">Quiet Button</a>
+              </li>
+              <li>
+                <a href="#large-button">Large Button</a>
+              </li>
+              <li>
+                <a href="#large-quietbutton">Large Quiet Button</a>
+              </li>
+              <li>
+                <a href="#call-toaction button">Call To Action Button</a>
+              </li>
+              <li>
+                <a href="#large-callto action button">Large Call To Action Button</a>
+              </li>
+              <li>
+              <li>
+                <a href="#colorButton">Coloured Button</a>
+              </li>
+              <li>
+              <li>
+                <a href="#colorOutlineButton">Coloured Outline Button</a>
+              </li>
+              <li>
+              <li>
+                <a href="#colorStatesButton">Coloured States Button</a>
+              </li>
+              <li>
+                <a href="#checkbox">Checkbox</a>
+              </li>
+              <li>
+                <a href="#icon-button">Icon Button</a>
+              </li>
+              <li>
+                <a href="#quiet-iconbutton">Quiet Icon Button</a>
+              </li>
+              <li>
+                <a href="#large-iconbutton">Large Icon Button</a>
+              </li>
+              <li>
+                <a href="#large-quieticon button">Large Quiet Icon Button</a>
+              </li>
+              <li>
+                <a href="#notification">Notification</a>
+              </li>
+              <li>
+                <a href="#radio-button">Radio Button</a>
+              </li>
+              <li>
+                <a href="#range">Range</a>
+              </li>
+              <li>
+                <a href="#search-input">Search Input</a>
+              </li>
+              <li>
+                <a href="#large-searchinput">Large Search Input</a>
+              </li>
+              <li>
+                <a href="#switch">Switch</a>
+              </li>
+              <li>
+                <a href="#tab-bar">Tab Bar</a>
+              </li>
+              <li>
+                <a href="#text-input">Text input</a>
+              </li>
+              <li>
+                <a href="#large-textinput">Large Text Input</a>
+              </li>
+              <li>
+                <a href="#select">Select</a>
+              </li>
+              <li>
+                <a href="#textarea">Textarea</a>
+              </li>
+              <li>
+                <a href="#large-textarea">Large Textarea</a>
+              </li>
+              <li>
+                <a href="#accordion">Accordion</a>
+              </li>
+              <li>
+                <a href="#grid">Grid</a>
+              </li>
+              <li>
+                <a href="#splitter">Splitter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="site">
+        <div id="content" class="max-width">
+          <article id="button-bar" class="component">
+            <header>
+              <h2>Button Bar</h2>
+            </header>
+            <section class="component">
+              <div class="patrom-button-bar">
+                <div class="patrom-button-bar__item">
+                  <button class="patrom-button-bar__button">One</button>
+                </div>
+                <div class="patrom-button-bar__item">
+                  <button class="patrom-button-bar__button">Two</button>
+                </div>
+                <div class="patrom-button-bar__item">
+                  <button class="patrom-button-bar__button">Three</button>
+                </div>
+              </div>
+            </section>
+          </article>
+          <article id="large-buttonbar" class="component">
+            <header>
+              <h2>Large Button Bar</h2>
+            </header>
+            <section class="component">
+              <div class="patrom-button-bar">
+                <div class="patrom-button-bar__item">
+                  <button class="patrom-button-bar__button--large">One</button>
+                </div>
+                <div class="patrom-button-bar__item">
+                  <button class="patrom-button-bar__button--large">Two</button>
+                </div>
+                <div class="patrom-button-bar__item">
+                  <button class="patrom-button-bar__button--large">Three</button>
+                </div>
+              </div>
+            </section>
+          </article>
+          <article id="button" class="component">
+            <header>
+              <h2>Button</h2>
+            </header>
+            <section class="component">
+              <button class="patrom-button">Button</button>
+              <button class="patrom-button" disabled>Button</button>
+            </section>
+          </article>
+          <article id="quiet-button" class="component">
+            <header>
+              <h2>Quiet Button</h2>
+            </header>
+            <section class="component">
+              <button class="patrom-button--quiet">Button</button>
+              <button class="patrom-button--quiet" disabled>Button</button>
+            </section>
+          </article>
+          <article id="large-button" class="component">
+            <header>
+              <h2>Large Button</h2>
+            </header>
+            <section class="component">
+              <button class="patrom-button--large">Button</button>
+              <button class="patrom-button--large" disabled>Button</button>
+            </section>
+          </article>
+          <article id="large-quietbutton" class="component">
+            <header>
+              <h2>Large Quiet Button</h2>
+            </header>
+            <section class="component">
+              <button class="patrom-button--large--quiet">Button</button>
+              <button class="patrom-button--large--quiet" disabled>Button</button>
+            </section>
+          </article>
+          <article id="call-toaction button" class="component">
+            <header>
+              <h2>Call To Action Button</h2>
+            </header>
+            <section class="component">
+              <button class="patrom-button--cta">Button</button>
+              <button class="patrom-button--cta" disabled>Button</button>
+            </section>
+          </article>
+          <article id="large-callto action button" class="component">
+            <header>
+              <h2>Large Call To Action Button</h2>
+            </header>
+            <section class="component">
+              <button class="patrom-button--large--cta">Button</button>
+              <button class="patrom-button--large--cta" disabled>Button</button>
+            </section>
+          </article>
+          <article id="colorButton" class="component">
+            <header>
+              <h2>Coloured Button</h2>
+            </header>
+            <section class="component">
+              <button class="patrom-button patrom-button--primary">primary</button>
+              <button class="patrom-button patrom-button--secondary">secondary</button>
+              <button class="patrom-button patrom-button--success">success</button>
+              <button class="patrom-button patrom-button--warning">warning</button>
+              <button class="patrom-button patrom-button--danger">danger</button>
+            </section>
+          </article>
+          <article id="colorOutlineButton" class="component">
+            <header>
+              <h2>Coloured Outline Button</h2>
+            </header>
+            <section class="component">
+              <button class="patrom-button patrom-button--outline-primary">primary</button>
+              <button class="patrom-button patrom-button--outline-secondary">secondary</button>
+              <button class="patrom-button patrom-button--outline-success">success</button>
+              <button class="patrom-button patrom-button--outline-warning">warning</button>
+              <button class="patrom-button patrom-button--outline-danger">danger</button>
+            </section>
+          </article>
+          <article id="colorStatesButton" class="component">
+            <header>
+              <h2>Coloured States (disabled) Button</h2>
+            </header>
+            <section class="component">
+              <button class="patrom-button patrom-button--primary" disabled>primary</button>
+              <button class="patrom-button patrom-button--secondary" disabled>secondary</button>
+              <button class="patrom-button patrom-button--outline-success" disabled>success</button>
+              <button class="patrom-button patrom-button--outline-warning" disabled>warning</button>
+              <button class="patrom-button patrom-button--outline-danger" disabled>danger</button>
+            </section>
+          </article>
+          <article id="checkbox" class="component">
+            <header>
+              <h2>Checkbox</h2>
+            </header>
+            <section class="component">
+              <label class="patrom-checkbox">
+                <input type="checkbox">
+                <div class="patrom-checkbox__checkmark"></div> Default
+              </label>
+              <br>
+              <br>
+              <label class="patrom-checkbox">
+                <input type="checkbox" disabled>
+                <div class="patrom-checkbox__checkmark"></div> Disabled
+              </label>
+            </section>
+          </article>
+          <article id="icon-button" class="component">
+            <header>
+              <h2>Icon Button</h2>
+            </header>
+            <section class="component">
+              <button class="patrom-icon-button">
+                <i class="las la-phone-volume"></i>
+              </button>
+              <button class="patrom-icon-button" disabled>
+                <span class="patrom-icon" style="background-color:#A5A7A7;"></span>
+              </button>
+            </section>
+          </article>
+          <article id="quiet-iconbutton" class="component">
+            <header>
+              <h2>Quiet Icon Button</h2>
+            </header>
+            <section class="component">
+              <button class="patrom-icon-button--quiet">
+                <span class="patrom-icon" style="background-color:#A5A7A7;"></span>
+              </button>
+              <button class="patrom-icon-button--quiet" disabled>
+                <span class="patrom-icon" style="background-color:#A5A7A7;"></span>
+              </button>
+            </section>
+          </article>
+          <article id="large-iconbutton" class="component">
+            <header>
+              <h2>Large Icon Button</h2>
+            </header>
+            <section class="component">
+              <button class="patrom-icon-button--large">
+                <span class="patrom-icon--large" style="background-color:#A5A7A7;"></span>
+              </button>
+              <button class="patrom-icon-button--large" disabled>
+                <span class="patrom-icon--large" style="background-color:#A5A7A7;"></span>
+              </button>
+            </section>
+          </article>
+          <article id="large-quieticon button" class="component">
+            <header>
+              <h2>Large Quiet Icon Button</h2>
+            </header>
+            <section class="component">
+              <button class="patrom-icon-button--large--quiet">
+                <span class="patrom-icon--large" style="background-color:#A5A7A7;"></span>
+              </button>
+              <button class="patrom-icon-button--large--quiet" disabled>
+                <span class="patrom-icon--large" style="background-color:#A5A7A7;"></span>
+              </button>
+            </section>
+          </article>
+          <article id="notification" class="component">
+            <header>
+              <h2>Notification</h2>
+            </header>
+            <section class="component">
+              <span class="patrom-notification">1</span>
+            </section>
+          </article>
+          <article id="radio-button" class="component">
+            <header>
+              <h2>Radio Button</h2>
+            </header>
+            <section class="component">
+              <!-- NO LABEL -->
+              <label class="patrom-radio-button">
+                <input type="radio" name="patrom">
+                <div class="patrom-radio-button__checkmark"></div>
+              </label>
+              <br>
+              <br>
+              <!-- LEFT LABEL -->
+              <label class="patrom-radio-button"> Left label <input type="radio" name="patrom">
+                <div class="patrom-radio-button__checkmark"></div>
+              </label>
+              <br>
+              <br>
+              <!-- RIGHT LABEL -->
+              <label class="patrom-radio-button">
+                <input type="radio" name="patrom">
+                <div class="patrom-radio-button__checkmark"></div> Right label
+              </label>
+              <br>
+              <br>
+              <!-- DISABLED -->
+              <label class="patrom-radio-button">
+                <input type="radio" name="patrom" Disabled>
+                <div class="patrom-radio-button__checkmark"></div> Disabled
+              </label>
+            </section>
+          </article>
+          <article id="range" class="component">
+            <header>
+              <h2>Range</h2>
+            </header>
+            <section class="component">
+              <input type="range" class="patrom-range">
+              <input type="range" class="patrom-range" disabled>
+            </section>
+          </article>
+          <article id="search-input" class="component">
+            <header>
+              <h2>Search Input</h2>
+            </header>
+            <section class="component">
+              <input type="search" value="" placeholder="search" class="patrom-search-input">
+              <input type="search" value="" placeholder="search" class="patrom-search-input" disabled>
+            </section>
+          </article>
+          <article id="large-searchinput" class="component">
+            <header>
+              <h2>Large Search Input</h2>
+            </header>
+            <section class="component">
+              <input type="search" value="" placeholder="search" class="patrom-search-input--large">
+              <input type="search" value="" placeholder="search" class="patrom-search-input--large" disabled>
+            </section>
+          </article>
+          <article id="select" class="component">
+            <header>
+              <h2>Select</h2>
+            </header>
+            <section class="component">
+              <select class="patrom-select">
+                <option selected="selected">Element one</option>
+                <option>Element two</option>
+                <option>Element three</option>
+              </select>
+            </section>
+          </article>
+          </article>
+          <article id="switch" class="component">
+            <header>
+              <h2>Switch</h2>
+            </header>
+            <section class="component">
+              <label class="patrom-switch">
+                <input type="checkbox" class="patrom-switch__input">
+                <div class="patrom-switch__toggle"></div>
+              </label>
+              <br>
+              <br>
+              <label class="patrom-switch">
+                <input type="checkbox" class="patrom-switch__input" checked>
+                <div class="patrom-switch__toggle"></div>
+              </label>
+              <br>
+              <br>
+              <label class="patrom-switch">
+                <input type="checkbox" class="patrom-switch__input" disabled>
+                <div class="patrom-switch__toggle"></div>
+              </label>
+            </section>
+          </article>
+          <article id="tab-bar" class="component">
+            <header>
+              <h2>Tab Bar</h2>
+            </header>
+            <section class="component">
+              <div class="patrom-tab-bar">
+                <label class="patrom-tab-bar__item">
+                  <input type="radio" name="tab-bar">
+                  <button class="patrom-tab-bar__button">One</button>
+                </label>
+                <label class="patrom-tab-bar__item">
+                  <input type="radio" name="tab-bar">
+                  <button class="patrom-tab-bar__button">Two</button>
+                </label>
+                <label class="patrom-tab-bar__item">
+                  <input type="radio" name="tab-bar">
+                  <button class="patrom-tab-bar__button">Three</button>
+                </label>
+              </div>
+            </section>
+          </article>
+          <article id="text-input" class="component">
+            <header>
+              <h2>Text input</h2>
+            </header>
+            <section class="component">
+              <input type="text" class="patrom-text-input" placeholder="text" value="">
+              <br>
+              <br>
+              <input type="text" class="patrom-text-input" placeholder="text" value="" disabled>
+              <br>
+              <br>
+              <input type="text" class="patrom-text-input" placeholder="text" value="fail" pattern="not-fail">
+            </section>
+          </article>
+          <article id="large-textinput" class="component">
+            <header>
+              <h2>Large Text Input</h2>
+            </header>
+            <section class="component">
+              <input type="text" class="patrom-text-input--large" value="" placeholder="text">
+              <br>
+              <br>
+              <input type="text" class="patrom-text-input--large" value="" placeholder="text" disabled>
+              <br>
+              <br>
+              <input type="text" class="patrom-text-input--large" placeholder="text" value="fail" pattern="not-fail">
+            </section>
+          </article>
+          <article id="textarea" class="component">
+            <header>
+              <h2>Textarea</h2>
+            </header>
+            <section class="component">
+              <textarea class="patrom-textarea" rows="6" cols="36" placeholder="Textarea"></textarea>
+              <br>
+              <br>
+              <textarea class="patrom-textarea" rows="6" cols="36" placeholder="Textarea" disabled></textarea>
+            </section>
+          </article>
+          <article id="large-textarea" class="component">
+            <header>
+              <h2>Large Textarea</h2>
+            </header>
+            <section class="component">
+              <textarea class="patrom-textarea--large" rows="6" cols="36" placeholder="Textarea"></textarea>
+              <br>
+              <br>
+              <textarea class="patrom-textarea--large" rows="6" cols="36" placeholder="Textarea" disabled></textarea>
+            </section>
+          </article>
+          <article id="tooltip" class="component">
+            <header>
+              <h2>Tooltip</h2>
+            </header>
+            <section class="component">
+              <main>
+                <div class="patrom-row">
+                  <div class="patrom-col col-span-12 center">
+                    <span tooltip="I'm up above it!">
+                      <button class="patrom-button">Up</button>
+                    </span>
+                  </div>
+                </div>
+                <div class="patrom-row">
+                  <div class="patrom-col col-span-6 center">
+                    <span tooltip="Slide to the left" flow="left">
+                      <button class="patrom-button">Left</button>
+                    </span>
+                  </div>
+                  <div class="patrom-col col-span-6 center">
+                    <span tooltip="Slide to the right" flow="right">
+                      <button class="patrom-button">Right</button>
+                    </span>
+                  </div>
+                </div>
+                <div class="patrom-row">
+                  <div class="patrom-col col-span-3 center">
+                    <span tooltip="Get Down." flow="down">
+                      <button class="patrom-button">Down</button>
+                    </span>
+                  </div>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </main>
+            </section>
+          </article>
+          <article id="accordion" class="component">
+            <header>
+              <h2>Accordion Open multiple</h2>
+            </header>
+            <section class="component">
+              <div class="patrom-tabs">
+                <div class="patrom-tab">
+                  <input type="checkbox" id="chck1">
+                  <label class="patrom-tab-label" for="chck1">Item 1</label>
+                  <div class="patrom-tab-content"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis! </div>
+                </div>
+                <div class="patrom-tab">
+                  <input type="checkbox" id="chck2">
+                  <label class="patrom-tab-label" for="chck2">Item 2</label>
+                  <div class="patrom-tab-content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in! </div>
+                </div>
+              </div>
+            </section>
+            <header>
+              <h2>Accordion Open one</h2>
+            </header>
+            <section class="component">
+              <div class="patrom-tabs">
+                <div class="patrom-tab">
+                  <input type="radio" id="rd1" name="rd">
+                  <label class="patrom-tab-label" for="rd1">Item 1</label>
+                  <div class="patrom-tab-content"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, facilis. </div>
+                </div>
+                <div class="patrom-tab">
+                  <input type="radio" id="rd2" name="rd">
+                  <label class="patrom-tab-label" for="rd2">Item 2</label>
+                  <div class="patrom-tab-content"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut. </div>
+                </div>
+                <div class="patrom-tab">
+                  <input type="radio" id="rd3" name="rd">
+                  <label for="rd3" class="patrom-tab-close">Close others &times;</label>
+                </div>
+              </div>
+            </section>
+          </article>
+          <article id="grid" class="component">
+            <header>
+              <h2>Grid</h2>
+            </header>
+            <section class="component">
+              <div class="patrom-row">
+                <div class="patrom-col col-span-12">
+                  <div class="boxGrid">12</div>
+                </div>
+              </div>
+              <div class="patrom-row">
+                <div class="patrom-col col-span-6">
+                  <div class="boxGrid">6</div>
+                </div>
+                <div class="patrom-col col-span-6">
+                  <div class="boxGrid">6</div>
+                </div>
+              </div>
+              <div class="patrom-row">
+                <div class="patrom-col col-span-3">
+                  <div class="boxGrid">3</div>
+                </div>
+                <div class="patrom-col col-span-3">
+                  <div class="boxGrid">3</div>
+                </div>
+                <div class="patrom-col col-span-3">
+                  <div class="boxGrid">3</div>
+                </div>
+                <div class="patrom-col col-span-3">
+                  <div class="boxGrid">3</div>
+                </div>
+              </div>
+              <div class="patrom-row">
+                <div class="patrom-col col-span-2">
+                  <div class="boxGrid">2</div>
+                </div>
+                <div class="patrom-col col-span-2">
+                  <div class="boxGrid">2</div>
+                </div>
+                <div class="patrom-col col-span-2">
+                  <div class="boxGrid">2</div>
+                </div>
+                <div class="patrom-col col-span-2">
+                  <div class="boxGrid">2</div>
+                </div>
+                <div class="patrom-col col-span-2">
+                  <div class="boxGrid">2</div>
+                </div>
+                <div class="patrom-col col-span-2">
+                  <div class="boxGrid">2</div>
+                </div>
+              </div>
+              <div class="patrom-row">
+                <div class="patrom-col col-span-1">
+                  <div class="boxGrid">1</div>
+                </div>
+                <div class="patrom-col col-span-1">
+                  <div class="boxGrid">1</div>
+                </div>
+                <div class="patrom-col col-span-1">
+                  <div class="boxGrid">1</div>
+                </div>
+                <div class="patrom-col col-span-1">
+                  <div class="boxGrid">1</div>
+                </div>
+                <div class="patrom-col col-span-1">
+                  <div class="boxGrid">1</div>
+                </div>
+                <div class="patrom-col col-span-1">
+                  <div class="boxGrid">1</div>
+                </div>
+                <div class="patrom-col col-span-1">
+                  <div class="boxGrid">1</div>
+                </div>
+                <div class="patrom-col col-span-1">
+                  <div class="boxGrid">1</div>
+                </div>
+                <div class="patrom-col col-span-1">
+                  <div class="boxGrid">1</div>
+                </div>
+                <div class="patrom-col col-span-1">
+                  <div class="boxGrid">1</div>
+                </div>
+                <div class="patrom-col col-span-1">
+                  <div class="boxGrid">1</div>
+                </div>
+                <div class="patrom-col col-span-1">
+                  <div class="boxGrid">1</div>
+                </div>
+              </div>
+            </section>
+          </article>
+          
+          <article id="splitter" class="component">
+            <header>
+              <h2>Splitter</h2>
+            </header>
+            <section class="component">
+              <header id="primary">
+                <div class="splitterHead">head</div>
+              </header>
+                <div id="splitterH" class="patrom-splitter" data-pane1="primary" data-pane2="secondary" data-orientation="horizontal" data-unit="rem" data-position="fixed" aria-labelled-by="title"></div>
+                <section id="secondary" class="patrom-splitter-container" aria-label="This Window splitter component usage">
+                  <nav id="pane1" class="pane1">
+                    <div class="splitterLeft">pane1</div>
+                  </nav>
+                  <div id="splitterV" class="patrom-splitter" data-pane1="pane1" data-pane2="pane2" aria-labelled-by="toc" ></div>
+                  <main id="pane2" class="pane2">
+                    <div class="splitterRight">pane2</div>
+                  </main>
+                </section>
+                
+                </body>
+                </html>
+  
+                
+              </div>
+            </section>
+          </article>
+        </div>
+        <footer></footer>
+      </div>
+    </div>
+    <script src="css/css.js"></script>
+  </body>
+</html>
