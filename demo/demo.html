@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>patrom</title>
     <meta name="viewport" content="user-scalable=no,initial-scale = 1.0,maximum-scale = 1.0">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <link rel="stylesheet" type="text/css" href="../dist/full.min.css">
+    <link rel="stylesheet" type="text/css" href="./demo.css">
   </head>
   <body class="dark">
     <div id="wrapper">
@@ -86,6 +86,9 @@
                 <a href="#tab-bar">Tab Bar</a>
               </li>
               <li>
+                <a href="#number-input">Number input</a>
+              </li>
+              <li>
                 <a href="#text-input">Text input</a>
               </li>
               <li>
@@ -105,6 +108,9 @@
               </li>
               <li>
                 <a href="#grid">Grid</a>
+              </li>
+              <li>
+                <a href="#icons">Icons</a>
               </li>
               <li>
                 <a href="#splitter">Splitter</a>
@@ -246,16 +252,50 @@
               <h2>Checkbox</h2>
             </header>
             <section class="component">
-              <label class="patrom-checkbox">
-                <input type="checkbox">
-                <div class="patrom-checkbox__checkmark"></div> Default
-              </label>
-              <br>
-              <br>
-              <label class="patrom-checkbox">
-                <input type="checkbox" disabled>
-                <div class="patrom-checkbox__checkmark"></div> Disabled
-              </label>
+              <div class="patrom-row">
+                <div class="patrom-col col-span-1">
+                  <label class="patrom-checkbox">Default
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="patrom-col col-span-1">
+                  <label class="patrom-checkbox">primary
+                    <input type="checkbox" class="primary" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="patrom-col col-span-1">
+                  <label class="patrom-checkbox">secondary
+                    <input type="checkbox" class="secondary" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="patrom-col col-span-1">
+                  <label class="patrom-checkbox">success
+                    <input type="checkbox" class="success">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="patrom-col col-span-1">
+                  <label class="patrom-checkbox">warning
+                    <input type="checkbox" class="warning" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="patrom-col col-span-1">
+                  <label class="patrom-checkbox danger">danger
+                    <input type="checkbox" class="danger" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="patrom-col col-span-1"> </div>
+                <div class="patrom-col col-span-1"> </div>
+                <div class="patrom-col col-span-1"> </div>
+                <div class="patrom-col col-span-1"> </div>
+                <div class="patrom-col col-span-1"> </div>
+                <div class="patrom-col col-span-1"> </div>
+              </div>
             </section>
           </article>
           <article id="icon-button" class="component">
@@ -417,6 +457,21 @@
               </div>
             </section>
           </article>
+          <article id="number-input" class="component">
+            <header>
+              <h2>Number input</h2>
+            </header>
+            <section class="component">
+              <input type="number" class="patrom-text-input" placeholder="1" value="">
+              <br>
+              <br>
+              <input type="number" class="patrom-text-input" placeholder="1" value="1" disabled>
+              <br>
+              <br>
+              <input type="number" class="patrom-text-input" placeholder="1" value="1" pattern="not-fail">
+            </section>
+          </article>
+
           <article id="text-input" class="component">
             <header>
               <h2>Text input</h2>
@@ -637,6 +692,193 @@
               </div>
             </section>
           </article>
+
+          <article id="icons" class="component">
+            <header>
+              <h2>Icons</h2>
+            </header>
+            <section class="component">
+              
+<div class="patrom-row">
+   <div class="patrom-col col-span-1"> <span tooltip="icon-adobeacrobatreader"> <span class="icon-adobeacrobatreader"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-azuredevops"> <span class="icon-azuredevops"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-css3"> <span class="icon-css3"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-csswizardry"> <span class="icon-csswizardry"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-docker"> <span class="icon-docker"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-git"> <span class="icon-git"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-github"> <span class="icon-github"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-gitlab"> <span class="icon-gitlab"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-gradle"> <span class="icon-gradle"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-graphql"> <span class="icon-graphql"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-html5"> <span class="icon-html5"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-ipfs"> <span class="icon-ipfs"></span> </span> </div>
+</div>
+<div class="patrom-row">
+   <div class="patrom-col col-span-1"> <span tooltip="icon-javascript"> <span class="icon-javascript"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-kodi"> <span class="icon-kodi"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-linkedin"> <span class="icon-linkedin"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-microsoftexcel"> <span class="icon-microsoftexcel"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-microsoftoutlook"> <span class="icon-microsoftoutlook"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-microsoftpowerpoint"> <span class="icon-microsoftpowerpoint"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-microsoftword"> <span class="icon-microsoftword"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-nintendogamecube"> <span class="icon-nintendogamecube"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-node-dot-js"> <span class="icon-node-dot-js"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-npm"> <span class="icon-npm"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-postgresql"> <span class="icon-postgresql"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-python"> <span class="icon-python"></span> </span> </div>
+</div>
+<div class="patrom-row">
+   <div class="patrom-col col-span-1"> <span tooltip="icon-r"> <span class="icon-r"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-raspberrypi"> <span class="icon-raspberrypi"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-typescript"> <span class="icon-typescript"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-visualstudiocode"> <span class="icon-visualstudiocode"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-vlcmediaplayer"> <span class="icon-vlcmediaplayer"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-vue-dot-js"> <span class="icon-vue-dot-js"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-w3c"> <span class="icon-w3c"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-xbox"> <span class="icon-xbox"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-usb1"> <span class="icon-usb1"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-caret-down"> <span class="icon-caret-down"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-caret-up"> <span class="icon-caret-up"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-caret-left"> <span class="icon-caret-left"></span> </span> </div>
+</div>
+<div class="patrom-row">
+   <div class="patrom-col col-span-1"> <span tooltip="icon-caret-right"> <span class="icon-caret-right"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-user-plus1"> <span class="icon-user-plus1"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-user-times"> <span class="icon-user-times"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-battery"> <span class="icon-battery"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-battery-4"> <span class="icon-battery-4"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-battery-full"> <span class="icon-battery-full"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-battery-3"> <span class="icon-battery-3"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-battery-three-quarters"> <span class="icon-battery-three-quarters"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-battery-2"> <span class="icon-battery-2"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-battery-half"> <span class="icon-battery-half"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-battery-1"> <span class="icon-battery-1"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-battery-quarter"> <span class="icon-battery-quarter"></span> </span> </div>
+</div>
+<div class="patrom-row">
+   <div class="patrom-col col-span-1"> <span tooltip="icon-battery-0"> <span class="icon-battery-0"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-battery-empty"> <span class="icon-battery-empty"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-usb"> <span class="icon-usb"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-home"> <span class="icon-home"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-image"> <span class="icon-image"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-camera"> <span class="icon-camera"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-film"> <span class="icon-film"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-connection"> <span class="icon-connection"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-podcast"> <span class="icon-podcast"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-feed"> <span class="icon-feed"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-mic"> <span class="icon-mic"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-library"> <span class="icon-library"></span> </span> </div>
+</div>
+<div class="patrom-row">
+   <div class="patrom-col col-span-1"> <span tooltip="icon-file-text"> <span class="icon-file-text"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-folder"> <span class="icon-folder"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-folder-open"> <span class="icon-folder-open"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-folder-plus"> <span class="icon-folder-plus"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-folder-minus"> <span class="icon-folder-minus"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-barcode"> <span class="icon-barcode"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-qrcode"> <span class="icon-qrcode"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-credit-card"> <span class="icon-credit-card"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-phone"> <span class="icon-phone"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-envelop"> <span class="icon-envelop"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-location"> <span class="icon-location"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-location2"> <span class="icon-location2"></span> </span> </div>
+</div>
+<div class="patrom-row">
+   <div class="patrom-col col-span-1"> <span tooltip="icon-map2"> <span class="icon-map2"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-history"> <span class="icon-history"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-clock"> <span class="icon-clock"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-calendar"> <span class="icon-calendar"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-printer"> <span class="icon-printer"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-keyboard"> <span class="icon-keyboard"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-drive"> <span class="icon-drive"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-database"> <span class="icon-database"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-undo"> <span class="icon-undo"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-redo"> <span class="icon-redo"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-user"> <span class="icon-user"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-users"> <span class="icon-users"></span> </span> </div>
+</div>
+<div class="patrom-row">
+   <div class="patrom-col col-span-1"> <span tooltip="icon-user-plus"> <span class="icon-user-plus"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-user-minus"> <span class="icon-user-minus"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-user-check"> <span class="icon-user-check"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-hour-glass"> <span class="icon-hour-glass"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-search"> <span class="icon-search"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-zoom-in"> <span class="icon-zoom-in"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-zoom-out"> <span class="icon-zoom-out"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-enlarge"> <span class="icon-enlarge"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-shrink"> <span class="icon-shrink"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-lock"> <span class="icon-lock"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-unlocked"> <span class="icon-unlocked"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-equalizer"> <span class="icon-equalizer"></span> </span> </div>
+</div>
+<div class="patrom-row">
+   <div class="patrom-col col-span-1"> <span tooltip="icon-equalizer2"> <span class="icon-equalizer2"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-cog"> <span class="icon-cog"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-pie-chart"> <span class="icon-pie-chart"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-stats-dots"> <span class="icon-stats-dots"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-stats-bars"> <span class="icon-stats-bars"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-stats-bars2"> <span class="icon-stats-bars2"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-bin"> <span class="icon-bin"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-switch"> <span class="icon-switch"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-cloud-download"> <span class="icon-cloud-download"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-cloud-upload"> <span class="icon-cloud-upload"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-cloud-check"> <span class="icon-cloud-check"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-link"> <span class="icon-link"></span> </span> </div>
+</div>
+<div class="patrom-row">
+   <div class="patrom-col col-span-1"> <span tooltip="icon-plus"> <span class="icon-plus"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-minus"> <span class="icon-minus"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-info"> <span class="icon-info"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-cancel-circle"> <span class="icon-cancel-circle"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-cross"> <span class="icon-cross"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-checkmark"> <span class="icon-checkmark"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-checkmark2"> <span class="icon-checkmark2"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-enter"> <span class="icon-enter"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-exit"> <span class="icon-exit"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-loop2"> <span class="icon-loop2"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-circle-up"> <span class="icon-circle-up"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-circle-right"> <span class="icon-circle-right"></span> </span> </div>
+</div>
+<div class="patrom-row">
+   <div class="patrom-col col-span-1"> <span tooltip="icon-circle-down"> <span class="icon-circle-down"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-circle-left"> <span class="icon-circle-left"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-tab"> <span class="icon-tab"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-move-up"> <span class="icon-move-up"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-move-down"> <span class="icon-move-down"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-sort-alpha-asc"> <span class="icon-sort-alpha-asc"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-sort-alpha-desc"> <span class="icon-sort-alpha-desc"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-sort-numeric-asc"> <span class="icon-sort-numeric-asc"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-sort-numberic-desc"> <span class="icon-sort-numberic-desc"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-sort-amount-asc"> <span class="icon-sort-amount-asc"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-sort-amount-desc"> <span class="icon-sort-amount-desc"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-checkbox-checked"> <span class="icon-checkbox-checked"></span> </span> </div>
+</div>
+<div class="patrom-row">
+   <div class="patrom-col col-span-1"> <span tooltip="icon-checkbox-unchecked"> <span class="icon-checkbox-unchecked"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-radio-checked"> <span class="icon-radio-checked"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-radio-checked2"> <span class="icon-radio-checked2"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-radio-unchecked"> <span class="icon-radio-unchecked"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-crop"> <span class="icon-crop"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-make-group"> <span class="icon-make-group"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-ungroup"> <span class="icon-ungroup"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-scissors"> <span class="icon-scissors"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-filter"> <span class="icon-filter"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-page-break"> <span class="icon-page-break"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-table"> <span class="icon-table"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-paragraph-left"> <span class="icon-paragraph-left"></span> </span> </div>
+</div>
+<div class="patrom-row">
+   <div class="patrom-col col-span-1"> <span tooltip="icon-paragraph-center"> <span class="icon-paragraph-center"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-paragraph-right"> <span class="icon-paragraph-right"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-paragraph-justify"> <span class="icon-paragraph-justify"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-indent-increase"> <span class="icon-indent-increase"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-indent-decrease"> <span class="icon-indent-decrease"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-embed2"> <span class="icon-embed2"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-terminal"> <span class="icon-terminal"></span> </span> </div>
+   <div class="patrom-col col-span-1"> <span tooltip="icon-onedrive"> <span class="icon-onedrive"></span> </span> </div>
+</div>
+            </section>
+          </article>
           
           <article id="splitter" class="component">
             <header>
@@ -668,6 +910,7 @@
         <footer></footer>
       </div>
     </div>
-    <script src="css/css.js"></script>
+    <script src="../dist/css.js"></script>
+    
   </body>
 </html>

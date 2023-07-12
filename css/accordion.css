@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background: var(--background-color);
+    background-color: var(--background-color);
     font-weight: bold;
     cursor: pointer;
     /* Icon */

@@ -1,3 +1,4 @@
+
 const themes = {
         "light": {
         "font-size" : "14px",
@@ -102,8 +103,6 @@ const themes = {
   theme.onchange = function(e) { setTheme(e.target.checked ? "dark" : "light"); };
 
   setTheme("dark");
-  
-  console.clear();
 
   class Splitter{
     static pxToRem(pixelValue) {
@@ -129,11 +128,11 @@ const themes = {
   
     constructor(splitterId) {
       this.$elem = document.getElementById(splitterId);
+      if (!this.$elem) return;
       this.$pane1 = document.getElementById(this.$elem.dataset.pane1);
+      if (!this.$pane1) return;
       this.$pane2 = document.getElementById(this.$elem.dataset.pane2);
-  
-      if (!this.$elem || !this.$pane1 || !this.$pane2) return;
-  
+      if (!this.$pane2) return;    
       // instance variables
       // instance variables
       this.$isPane1Before = true;

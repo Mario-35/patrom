@@ -31,7 +31,7 @@
   line-height: 1.313rem;
   letter-spacing: 0;
   color: var(--content-color);
-  text-shadow: 0 -1px var(--button-text-shadow);
+  /* text-shadow: 0 -1px var(--button-text-shadow); */
   vertical-align: top;
   background-color: var(--background-color);
   box-shadow: inset 0 1px var(--button-box-shadow);
@@ -82,7 +82,7 @@
 
 .patrom-button--quiet:hover,
 .patrom-button--large--quiet:hover {
-  text-shadow: 0 -1px var(--button-text-shadow);
+  /* text-shadow: 0 -1px var(--button-text-shadow); */
   border: 1px solid var(--button-border-color);
   box-shadow: inset 0 1px var(--button-box-shadow);
 }
@@ -92,7 +92,7 @@
 .patrom-button--large--quiet:active,
 .patrom-button--large--quiet:focus:active {
   color: var(--content-color);
-  text-shadow: 0 -1px var(--button-text-shadow);
+  /* text-shadow: 0 -1px var(--button-text-shadow); */
   background-color: var(--button-background-color);
   border: 1px solid var(--button-border-color);
   box-shadow: inset 0 1px var(--button-background-shadow);
@@ -120,7 +120,7 @@
   box-shadow: inset 0 1px var(--box-shadow);
   color: var(--text-color);
   font-weight: 500;
-  text-shadow: 0 -1px var(--text-shadow);
+  /* text-shadow: 0 -1px var(--text-shadow); */
 }
 
 .patrom-button--cta:hover,
@@ -181,7 +181,7 @@
   box-shadow: inset 0 1px var(--box-shadow);
   color: var(--text-color);
   font-weight: 500;
-  text-shadow: 0 -1px var(--text-shadow);
+  /* text-shadow: 0 -1px var(--text-shadow); */
 }
 
 .patrom-button--cta:hover,
@@ -266,10 +266,10 @@
   color: #777;
 }
 .patrom-button--outline-secondary:hover, .patrom-button--outline-secondary:focus {
-  background-color: rgba(119, 119, 119, 0.1);
+  /* background-color: rgba(119, 119, 119, 0.1); */
 }
 .patrom-button--outline-secondary:active, .patrom-button--outline-secondary.patrom-button--is-active {
-  background-color: rgba(119, 119, 119, 0.2);
+  /* background-color: rgba(119, 119, 119, 0.2); */
 }
 
 .patrom-button--outline-success {
@@ -321,7 +321,7 @@
 }
 
 .patrom-button--clear-secondary {
-  color: #777;
+  color: var(--secondary);
 }
 .patrom-button--clear-secondary:hover, .patrom-button--clear-secondary:focus {
   color: var(--secondary-focus);
@@ -362,6 +362,8 @@
 
 .patrom-button:disabled,
 .patrom-button--is-disabled {
+  background-color: transparent;
+
   opacity: 0.65;
   pointer-events: none;
 }

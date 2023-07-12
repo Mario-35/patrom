@@ -1,0 +1,11 @@
+{
+  "name": "patrom",
+  "version": "1.0.0",
+  "description": "css theme",
+  "main": "build.js",
+  "scripts": {
+    "build": "node .\\build.js && css-minify -f ./dist/full.css -o ./dist/"
+  },
+  "author": "ADAM Mario",
+  "license": "ISC"
+}

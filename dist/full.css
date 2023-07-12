@@ -20,19 +20,13 @@ body {
   margin: 0;
   padding: 0;
   background: var(--body-background);
-  color: #000;
-  font: 16px "Source Sans", helvetica, arial, sans-serif;
-  font-weight: 400;
+  color: var(--text-color);
+  font-size: var(--font-size);
 }
 
 :focus {
   outline-color: transparent;
   outline-style: none;
-}
-
-.patrom-icon--menu-stack {
-  background: url("../img/hamburger_light.svg") no-repeat;
-  background-size: cover;
 }
 
 .quarter {
@@ -607,7 +601,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background: var(--background-color);
+    background-color: var(--background-color);
     font-weight: bold;
     cursor: pointer;
     /* Icon */
@@ -756,7 +750,7 @@ body {
   line-height: 1.313rem;
   letter-spacing: 0;
   color: var(--content-color);
-  text-shadow: 0 -1px var(--button-text-shadow);
+  /* text-shadow: 0 -1px var(--button-text-shadow); */
   vertical-align: top;
   background-color: var(--background-color);
   box-shadow: inset 0 1px var(--button-box-shadow);
@@ -807,7 +801,7 @@ body {
 
 .patrom-button--quiet:hover,
 .patrom-button--large--quiet:hover {
-  text-shadow: 0 -1px var(--button-text-shadow);
+  /* text-shadow: 0 -1px var(--button-text-shadow); */
   border: 1px solid var(--button-border-color);
   box-shadow: inset 0 1px var(--button-box-shadow);
 }
@@ -817,7 +811,7 @@ body {
 .patrom-button--large--quiet:active,
 .patrom-button--large--quiet:focus:active {
   color: var(--content-color);
-  text-shadow: 0 -1px var(--button-text-shadow);
+  /* text-shadow: 0 -1px var(--button-text-shadow); */
   background-color: var(--button-background-color);
   border: 1px solid var(--button-border-color);
   box-shadow: inset 0 1px var(--button-background-shadow);
@@ -845,7 +839,7 @@ body {
   box-shadow: inset 0 1px var(--box-shadow);
   color: var(--text-color);
   font-weight: 500;
-  text-shadow: 0 -1px var(--text-shadow);
+  /* text-shadow: 0 -1px var(--text-shadow); */
 }
 
 .patrom-button--cta:hover,
@@ -906,7 +900,7 @@ body {
   box-shadow: inset 0 1px var(--box-shadow);
   color: var(--text-color);
   font-weight: 500;
-  text-shadow: 0 -1px var(--text-shadow);
+  /* text-shadow: 0 -1px var(--text-shadow); */
 }
 
 .patrom-button--cta:hover,
@@ -991,10 +985,10 @@ body {
   color: #777;
 }
 .patrom-button--outline-secondary:hover, .patrom-button--outline-secondary:focus {
-  background-color: rgba(119, 119, 119, 0.1);
+  /* background-color: rgba(119, 119, 119, 0.1); */
 }
 .patrom-button--outline-secondary:active, .patrom-button--outline-secondary.patrom-button--is-active {
-  background-color: rgba(119, 119, 119, 0.2);
+  /* background-color: rgba(119, 119, 119, 0.2); */
 }
 
 .patrom-button--outline-success {
@@ -1046,7 +1040,7 @@ body {
 }
 
 .patrom-button--clear-secondary {
-  color: #777;
+  color: var(--secondary);
 }
 .patrom-button--clear-secondary:hover, .patrom-button--clear-secondary:focus {
   color: var(--secondary-focus);
@@ -1087,6 +1081,8 @@ body {
 
 .patrom-button:disabled,
 .patrom-button--is-disabled {
+  background-color: transparent;
+
   opacity: 0.65;
   pointer-events: none;
 }
@@ -1097,120 +1093,106 @@ input[type="checkbox"] {
   border: 0;
   opacity: 0.001;
   z-index: 1;
-  vertical-align: top;
   outline: none;
 }
 
-.checkbox,
-.patrom-checkbox__checkmark {
-  box-sizing: border-box;
-  background-clip: padding-box;
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  cursor: default;
-  user-select: none;
-}
-
-.checkbox__label,
+/* Customize the label (the patrom-checkbox) */
 .patrom-checkbox {
+  display: block;
   position: relative;
-  display: inline-block;
-  vertical-align: top;
-  cursor: default;
+  padding-left: 25px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  font-size: var(--font-size);
   user-select: none;
 }
 
-.checkbox--disabled,
-input[type="checkbox"]:disabled + .patrom-checkbox__checkmark {
-  opacity: 0.3;
-  cursor: default;
-  pointer-events: none;
-}
-
-.checkbox:before,
-.checkbox:after,
-.patrom-checkbox__checkmark:before,
-.patrom-checkbox__checkmark:after {
-  content: '';
+/* Hide the browser's default checkbox */
+.patrom-checkbox input {
   position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
 
-.checkbox:before,
-.patrom-checkbox__checkmark:before {
-  box-sizing: border-box;
-  background-clip: padding-box;
-}
-
-.patrom-checkbox__checkmark {
-  height: 1rem;
-}
-
-input[type="checkbox"] {
-  height: 1rem;
-  width: 1rem;
-  margin-top: 0;
-  margin-right: -1rem;
-  margin-bottom: -1rem;
-  margin-left: 0;
-}
-
-input[type="checkbox"]:checked + .patrom-checkbox__checkmark:after {
-  opacity: 1;
-}
-
-.patrom-checkbox {
-  line-height: 1rem;
-  color: var(--content-color);
-
-}
-
-.patrom-checkbox__checkmark:before {
-  width: 1rem;
-  height: 1rem;
+/* Create a custom checkbox */
+.checkmark {
   background: var(--background-color);
   border: 1px solid var(--button-border-color);
   border-radius: 3px;
   box-shadow: inset 0 1px var(--button-box-shadow);
+  position: absolute;
+  top: 0;
+  left: 4px;
+  height: var(--font-size);
+  width: var(--font-size);
+  /* background-color: #eee; */
 }
 
-.patrom-checkbox__checkmark {
-  width: 1rem;
-  height: 1rem;
-}
-
-.patrom-checkbox__checkmark:after {
-  top: 2px;
-  left: 1px;
-  opacity: 0;
-  width: 14px;
-  height: 4px;
-  background: transparent;
-  border: 7px solid var(--content-color);
-  border-width: 3px;
-  border-top: none;
-  border-right: none;
-  border-radius: 1px;
-  transform: rotate(-50deg);
-}
-
-input[type="checkbox"]:focus + .patrom-checkbox__checkmark:before {
+/* On mouse-over, add a grey background color */
+.patrom-checkbox:hover input ~ .checkmark {
+  background-color: transparent;  
   border: 1px solid var(--border-blue);
   box-shadow: inset 0 1px var(--box-shadow), 0 0 0 2px var(--box-shadow-blue);
 }
 
-input[type="checkbox"]:active + .patrom-checkbox__checkmark:before {
-  border: 1px solid var(--button-border-color);
-  background-color: var(--button-background-color);
-  box-shadow: inset 0 1px var(--button-background-shadow);
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
 }
 
-input[type="checkbox"]:disabled:active + .patrom-checkbox__checkmark:before {
-  border: 1px solid var(--button-border-color);
-  background: var(--background-color);
-  box-shadow: inset 0 1px var(--button-box-shadow);
+/* Show the checkmark when checked */
+.patrom-checkbox input:checked ~ .checkmark:after {
+  display: block;
 }
 
+/* Style the checkmark/indicator */
+.patrom-checkbox .checkmark:after {
+  left: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* When the checkbox is checked, add a blue background */
+.patrom-checkbox input:checked ~ .checkmark {
+  background-color: var(--background-color);
+}
+
+.patrom-checkbox input:checked ~ .checkmark:after {
+  border: solid var(--content-color);
+  border-width: 0 3px 3px 0;
+}
+.patrom-checkbox input.primary:checked ~ .checkmark:after {
+  border: solid var(--primary);
+  border-width: 0 3px 3px 0;
+}
+.patrom-checkbox input.secondary:checked ~ .checkmark:after {
+  border: solid var(--secondary);
+  border-width: 0 3px 3px 0;
+}
+.patrom-checkbox input.success:checked ~ .checkmark:after {
+  border: solid var(--success);
+  border-width: 0 3px 3px 0;
+}
+.patrom-checkbox input.warning:checked ~ .checkmark:after {
+  border: solid var(--warning);
+  border-width: 0 3px 3px 0;
+}
+
+.patrom-checkbox input.danger:checked ~ .checkmark:after {
+  border: solid var(--danger);
+  border-width: 0 3px 3px 0;
+}
 .patrom-icon-button,
 .patrom-icon-button--quiet,
 .patrom-icon-button--large,
@@ -1532,6 +1514,7 @@ input[type="radio"]:disabled:active + .patrom-radio-button__checkmark:before {
   background: var(--background-color);
   box-shadow: inset 0 1px var(--button-box-shadow);
 }
+
 
 
 .list {
