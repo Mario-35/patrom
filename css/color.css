@@ -1,0 +1,82 @@
+.gray {
+  color: var(--btn-gray-color);
+  background-color: var(--btn-gray-background);
+}
+
+.gray:hover, .gray.is-active {
+  background-color: var(--btn-gray-hover-background);
+}
+
+.gray:active, .gray.is-active {
+  background-color: var(--btn-gray-active-background);
+}
+
+.gray:disabled {
+  color: var(--btn-gray-background);
+}
+
+.primary {
+  color: var(--btn-primary-color);
+  background-color: var(--btn-primary-background);
+}
+
+.primary:active, .primary.is-active {
+  background-color: var(--btn-primary-active-background);
+}
+
+.primary:disabled {
+  color: var(--btn-primary-background);
+}
+
+.info {
+  color: var(--btn-info-color);
+  background-color: var(--btn-info-background);
+}
+
+.info:active, .info.is-active {
+  background-color: var(--btn-info-active-background);
+}
+
+.info:disabled {
+  color: var(--btn-info-background);
+}
+
+
+.success {
+  color: var(--btn-success-color);
+  background-color: var(--btn-success-background);
+}
+
+.success:active, .success.is-active {
+  background-color: var(--btn-success-active-background);
+}
+
+.success:disabled {
+  color: var(--btn-success-background);
+}
+
+.warning {
+  color: var(--btn-warning-color);
+  background-color: var(--btn-warning-background);
+}
+
+.warning:active, .warning.is-active {
+  background-color: var(--btn-danger-active-background);
+}
+
+.warning:disabled {
+  color: var(--btn-warning-background);
+}
+
+.danger {
+  color: var(--btn-danger-color);
+  background-color: var(--btn-danger-background);
+}
+
+.danger:active, .danger.is-active {
+  background-color: var(--btn-danger-active-background);
+}
+
+.danger:disabled {
+  color: var(--btn-danger-background);
+}

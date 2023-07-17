@@ -11,7 +11,7 @@
   color: inherit;
   background: transparent;
   border: none;
-  cursor: default;
+  cursor: gray;
   user-select: none;
   text-overflow: ellipsis;
   white-space: nowrap;

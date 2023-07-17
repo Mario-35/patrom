@@ -11,7 +11,7 @@
   color: inherit;
   background: transparent;
   border: none;
-  cursor: default;
+  cursor: gray;
   user-select: none;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -22,13 +22,12 @@
 .button--quiet {
   background: transparent;
   border: 1px solid transparent;
-  box-shadow: none;
 }
 
 .button--disabled,
 .patrom-tab-bar__button:disabled {
   opacity: 0.3;
-  cursor: default;
+  cursor: gray;
   pointer-events: none;
 }
 
@@ -66,7 +65,7 @@
 
 .button-bar__item:disabled {
   opacity: 0.3;
-  cursor: default;
+  cursor: gray;
   pointer-events: none;
 }
 
@@ -76,24 +75,18 @@
   line-height: 1.313rem;
   letter-spacing: 0;
   color: var(--content-color);
-  text-shadow: 0 -1px var(--button-text-shadow);
   vertical-align: top;
   background-color: var(--background-color);
-  box-shadow: inset 0 1px var(--button-box-shadow);
-  border-top: 1px solid var(--button-border-color);
+  border-top: 1px solid var(--btn-gray-border);
 }
 
 .patrom-tab-bar__button:active,
-.patrom-tab-bar__button--large:active,
 :checked + .patrom-tab-bar__button {
-  color: var(--background-color-cta);
-  background-color: var(--button-background-color);
-  box-shadow: inset 0 0 1px var(--button-background-shadow);
+  color: var(--background-highlight);
+  background-color: var(--btn-gray-background);
 }
 
-.patrom-tab-bar__button:focus,
-.patrom-tab-bar__button--large:focus {
+.patrom-tab-bar__button:focus {
   z-index: 1;
-  box-shadow: inset 0 1px var(--box-shadow), 0 0 0 2px var(--box-shadow-blue);
   outline: 0;
 }

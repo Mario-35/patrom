@@ -1,6 +1,5 @@
 .input,
-.patrom-text-input,
-.patrom-text-input--large {
+.patrom-text-input {
   padding: 0;
   margin: 0;
   font: inherit;
@@ -14,33 +13,28 @@
 }
 
 .input:disabled,
-.patrom-text-input:disabled,
-.patrom-text-input--large:disabled {
+.patrom-text-input:disabled {
   opacity: 0.3;
-  cursor: default;
+  cursor: gray;
   pointer-events: none;
 }
 
-.patrom-text-input,
-.patrom-text-input--large {
+.patrom-text-input {
   line-height: 1.313rem;
   font-size: var(--font-size);
   letter-spacing: 0;
   padding: 0 0.563rem;
-  border: 1px solid var(--button-border-color);
+  border: 1px solid var(--btn-gray-border);
   border-radius: 4px;
   background-color: var(--input-background);
-  box-shadow: inset 0 1px var(--button-background-shadow);
   color: var(--content-color);
   vertical-align: top;
 }
 
-.patrom-text-input:focus,
-.patrom-text-input--large:focus {
+.patrom-text-input:focus {
   background-color: var(--background-color);
   color: var(--text-color);
-  border: 1px solid var(--border-blue);
-  box-shadow: 0 0 0 2px var(--box-shadow-blue);
+  border: 1px solid var(--border-focus);
 }
 
 .patrom-text-input:disabled::-webkit-input-placeholder {
@@ -56,30 +50,5 @@
 }
 
 .patrom-text-input:invalid {
-  border: 1px solid var(--invalid-colour);
-}
-
-.patrom-text-input--large {
-  line-height: 1.688rem;
-  font-size: 0.875rem;
-}
-
-.patrom-text-input--large:disabled {
-  color: var(--text-color);
-}
-
-.patrom-text-input--large:disabled::-webkit-input-placeholder {
-  color: var(--text-color);
-}
-
-.patrom-text-input--large:disabled::-moz-placeholder {
-  color: var(--text-color);
-}
-
-.patrom-text-input--large:disabled:-ms-input-placeholder {
-  color: var(--text-color);
-}
-
-.patrom-text-input--large:invalid {
   border: 1px solid var(--invalid-colour);
 }

@@ -2,7 +2,6 @@
   .patrom-tabs {
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 4px -2px var(--button-text-shadow);
   }
   
   .patrom-tab {
@@ -17,10 +16,9 @@
     background-color: var(--background-color);
     font-weight: bold;
     cursor: pointer;
-    /* Icon */
   }
   .patrom-tab-label:hover {
-    background: var(--background-color-cta);
+    background: var(--background-highlight);
   }
   .patrom-tab-label::after {
     content: "❯";
@@ -33,8 +31,13 @@
     max-height: 0;
     padding: 0 12px;
     color: var(--content-color);
-    background: var(--input-background);
+    background-color: var(--content-background);
+    border: 1px solid 1px solid rgb(105, 105, 105);
     transition: all 0.35s;
+
+    /* body-background : #4b4d4e;
+    background-color : #444949; */
+
   }
   .patrom-tab-close {
     display: flex;
@@ -45,11 +48,11 @@
     cursor: pointer;
   }
   .patrom-tab-close:hover {
-    background: var(--background-color-cta);
+    background: var(--background-highlight);
   }
   
   input:checked + .patrom-tab-label {
-    background: var(--background-color-cta);
+    background: var(--background-highlight);
   }
   input:checked + .patrom-tab-label::after {
     transform: rotate(90deg);

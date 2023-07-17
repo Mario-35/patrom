@@ -7,7 +7,7 @@
     color: inherit;
     background: transparent;
     border: none;
-    cursor: default;
+    cursor: gray;
     user-select: none;
     overflow: auto;
     -webkit-overflow-scrolling: touch;

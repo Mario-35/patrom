@@ -20,7 +20,7 @@
     display:block;
     width: 5px;
     height:auto;
-    background: var(--background-color-cta);
+    background: var(--background-highlight);
     cursor: col-resize;
     margin: 0 3px;
   }

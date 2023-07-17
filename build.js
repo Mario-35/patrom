@@ -1,10 +1,4 @@
-const minify = async (str) => {
-  const result = await postcss([cssnano({
-    preset: 'default',
-  })]).process(str, { from: 'undefined' });
-  return result.css;
-};
-
+// INSTALL BEFORE npm install css-minify -g
 
 const fs = require('fs');
 var path = require("path");

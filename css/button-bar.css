@@ -35,7 +35,7 @@
 
 .button-bar__item:disabled {
   opacity: 0.3;
-  cursor: default;
+  cursor: gray;
   pointer-events: none;
 }
 
@@ -49,13 +49,11 @@
   border-bottom-right-radius: 4px;
 }
 
-.patrom-button-bar__item:first-child > .patrom-button-bar__button,
-.patrom-button-bar__item:first-child > .patrom-button-bar__button--large {
+.patrom-button-bar__item:first-child > .patrom-button-bar__button{
   border-right: none;
 }
 
-.patrom-button-bar__item:last-child > .patrom-button-bar__button,
-.patrom-button-bar__item:last-child > .patrom-button-bar__button--large {
+.patrom-button-bar__item:last-child > .patrom-button-bar__button {
   border-left: none;
 }
 
@@ -63,11 +61,6 @@
   border-radius: inherit;
 }
 
-.patrom-button-bar__button:focus,
-.patrom-button-bar__button--large:focus {
+.patrom-button-bar__button:focus {
   z-index: 1;
-}
-
-.patrom-button-bar__button--large {
-  border-radius: inherit;
 }

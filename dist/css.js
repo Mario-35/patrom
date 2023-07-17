@@ -1,106 +1,154 @@
 
-const themes = {
-        "light": {
-        "font-size" : "14px",
-        "body-background" : "#dfe2e2",
-        "text-color" : "#000",
-        "content-color" : "#454545",
-        "button-box-shadow" : "#fff",
-        "background-color" : "#e5e9e8",
-        "button-border-color" : "#9daca9",
-        "background-color-hover" : "#eff1f1",
-        "border-blue" : "#0036ff",
-        "box-shadow-blue" : "#6fb5f1",
-        "background-color-cta" : "#288edf",
-        "button-border-color-cta" : "#134f7f",
-        "background-color-cta-active" : "#1e7dc8",
-        "background-color-cta-hover" : "#4ca1e4",
-        "button-text-shadow" : "#fff",
-        "button-background-color" : "#d2d6d6",    
-        "box-shadow" : "rgba(255,255,255,0.36)",
-        "box-shadow-active" : "rgba(0,0,0,0.12)",
-        "select-background" : "#DDE1E1",
-        "select-box-shadow" : "#949696",
+var themes = {
+  "common": {
+    "font-size" : "14px",
+    "font-size-2" : "12px",
+
+    "btn-gray-color" : "#eceff1",
+    "btn-gray-border" : "#546e7a",
+    "btn-gray-hover-border" : "#78909c",
+    "btn-gray-disabled-background" : "#b0bec5",
+    "btn-gray-disabled-border" : "#90a4ae",
+    "btn-gray-background" : "#78909c",
+    "btn-gray-hover-color" : "#fff",
+    "btn-gray-hover-background" : "#90a4ae",
+    "btn-gray-active-border" : "#546e7a",
+    "btn-gray-active-color" : "#cfd8dc",
+    "btn-gray-active-background" : "#546e7a",    
+    "btn-primary-border" : "#1e88e5",
+    "btn-primary-hover-border" : "#42a5f5",
+    "btn-primary-disabled-background" : "#90caf9",
+    "btn-primary-disabled-border" : "#64b5f6",
+    "btn-primary-color" : "#e3f2fd",
+    "btn-primary-background" : "#42a5f5",
+    "btn-primary-hover-color" : "#fff",
+    "btn-primary-hover-background" : "#64b5f6",
+    "btn-primary-active-border" : "#1e88e5",
+    "btn-primary-active-color" : "#bbdefb",
+    "btn-primary-active-background" : "#1e88e5",
+    "btn-success-border" : "#43A047",
+    "btn-success-hover-border" : "#66BB6A",
+    "btn-success-disabled-background" : "#A5D6A7",
+    "btn-success-disabled-border" : "#81C784",
+    "btn-success-color" : "#E8F5E9",
+    "btn-success-background" : "#66BB6A",
+    "btn-success-hover-color" : "#fff",
+    "btn-success-hover-background" : "#81C784",
+    "btn-success-active-border" : "#43A047",
+    "btn-success-active-color" : "#C8E6C9",
+    "btn-success-active-background" : "#43A047",
+    "btn-info-border" : "#00ACC1",
+    "btn-info-hover-border" : "#26C6DA",
+    "btn-info-disabled-background" : "#80DEEA",
+    "btn-info-disabled-border" : "#4DD0E1",
+    "btn-info-color" : "#E0F7FA",
+    "btn-info-background" : "#26C6DA",
+    "btn-info-hover-color" : "#fff",
+    "btn-info-hover-background" : "#4DD0E1",
+    "btn-info-active-border" : "#00ACC1",
+    "btn-info-active-color" : "#B2EBF2",
+    "btn-info-active-background" : "#00ACC1",
+    "btn-warning-border" : "#FB8C00",
+    "btn-warning-hover-border" : "#FFA726",
+    "btn-warning-disabled-background" : "#FFCC80",
+    "btn-warning-disabled-border" : "#FFB74D",
+    "btn-warning-color" : "#FFF3E0",
+    "btn-warning-background" : "#FFA726",
+    "btn-warning-hover-color" : "#fff",
+    "btn-warning-hover-background" : "#FFB74D",
+    "btn-warning-active-border" : "#FB8C00",
+    "btn-warning-active-color" : "#FFE0B2",
+    "btn-warning-active-background" : "#FB8C00",
+    "btn-danger-border" : "#F4511E",
+    "btn-danger-hover-border" : "#FF7043",
+    "btn-danger-disabled-background" : "#FFAB91",
+    "btn-danger-disabled-border" : "#FF8A65",
+    "btn-danger-color" : "#FBE9E7",
+    "btn-danger-background" : "#FF7043",
+    "btn-danger-hover-color" : "#fff",
+    "btn-danger-hover-background" : "#FF8A65",
+    "btn-danger-active-border" : "#F4511E",
+    "btn-danger-active-color" : "#FFCCBC",
+    "btn-danger-active-background" : "#F4511E",
+    },
+    "light": {
+      "text-color" : "#000",
+      "button-border" : "#cccccc",
+      "content-color" : "#454545",
+      "button-hover": "#208103",
+              "select-box-shadow" : "#949696",
         "select-border-top" : "#fff",
-        "select-text-shadow" : "#FFF",
-        "text-shadow" : "rgba(0,0,0,0.36)",
-        "input-shadow" : "rgba(0a,0,0,0.23)",
-        "button-background-shadow" : "rgba(0,0,0,0.1)",
+        "body-background" : "#dfe2e2",
+        "background-color" : "#e5e9e8",
+        "background-color-hover" : "#eff1f1",
+        "content-background" : "#e1e6e6",
+        "border-focus" : "#0036ff",
+        "background-highlight" : "#288edf",
+        "background-highlight-hover" : "#4ca1e4",
+        "select-background" : "#DDE1E1",
+        "select-border-top" : "#fff",
         "input-background" : "#fff",
         "invalid-colour" : "#ec514e",
-        "primary": "#2ea0eb",
-        "primary-focus": "#1487d2",
-        "primary-active": "#1069a3",
-        "secondary": "#5e5e5e",
-        "secondary-focus": "#5e5e5e70",
-        "secondary-active": "#444444",
-        "success": "#89d085",
-        "success-focus": "#65c260",
-        "success-active": "#48ad42",
-        "warning": "#f29a4e",
-        "warning-focus": "#ef7f1e",
-        "warning-active": "#cb660f",
-        "danger": "#fa5757",
-        "danger-focus": "#f92525",
-        "danger-active": "#e40707",
         "color-active" : "#0772c3",
         "color-hover" : "#29a0fa",
       }, "dark": {
-        "font-size" : "14px",
-        "body-background" : "#4b4d4e",
-        "background-color-hover" : "#626465",
         "text-color" : "#fff",
+      "button-border" : "#6b6767",
+      "select-box-shadow" : "#303233",
+      "select-border-top" : "#666767",
         "content-color" : "#c6c8c8",
-        "button-box-shadow" : "#737373",
+        "button-hover": "#208103",
+        "body-background" : "#4b4d4e",
         "background-color" : "#595b5b",
-        "button-border-color" : "#333434",
-        "button-border-color" : "#333434",
+        "background-color-hover" : "#288edf",
+        "content-background" : "#444949",
+        "border-focus" : "#0036ff",
+        "background-highlight" : "#288edf",
+        "background-highlight-hover" : "#4ca1e4",
         "select-background" : "#595B5B",
-        "select-box-shadow" : "#303233",
-        "select-border-top" : "#666767",
-        "select-text-shadow" : "#000",
-        "border-blue" : "#0036ff",
-        "box-shadow-blue" : "#6fb5f1",
-        "background-color-cta" : "#288edf",
-        "button-border-color-cta" : "#134f7f",
-        "background-color-cta-active" : "#1e7dc8",
-        "background-color-cta-hover" : "#4ca1e4",
-        "button-text-shadow" : "#rgba(0,0,0,0.69)",
-        "button-background-color" : "#3f4041",
         "input-background" : "#454646",
-        "box-shadow" : "rgba(255,255,255,0.36)",
-        "box-shadow-active" : "rgba(0o,0,0,0.12)",
-        "text-shadow" : "rgba(0,0,0,0.36)",
-        "input-shadow" : "rgba(0a,0,0,0.23)",
-        "button-background-shadow" : "rgba(0,0,0,0.05)",
         "invalid-colour" : "#ec514e",
         "color-active" : "#1e7dc8",
         "color-hover" : "#4ca1e4",
-        "primary": "#2ea0eb",
-        "primary-focus": "#1487d2",
-        "primary-active": "#1069a3",
-        "secondary": "#5e5e5e",
-        "secondary-focus": "#5e5e5e70",
-        "secondary-active": "#444444",
-        "success": "#89d085",
-        "success-focus": "#65c260",
-        "success-active": "#48ad42",
-        "warning": "#f29a4e",
-        "warning-focus": "#ef7f1e",
-        "warning-active": "#cb660f",
-        "danger": "#fa5757",
-        "danger-focus": "#f92525",
-        "danger-active": "#e40707",
       }
     };
-  const setTheme = (name) => {
-    const theme = themes[name];
-    const root = document.querySelector(':root');
-    Object.keys(theme).forEach(key => {
+    function setTheme(name) {
+    var theme = themes[name];
+    var root = document.querySelector(':root');
+    Object.keys(themes.common).forEach(function(key) {
+        root.style.setProperty('--' + key, themes.common[key]);
+    });
+    Object.keys(theme).forEach(function(key){
         root.style.setProperty('--' + key, theme[key]);
     });
-  };
+  }
+
   theme.onchange = function(e) { setTheme(e.target.checked ? "dark" : "light"); };
+
+  theme.onclick = function(e) { 
+    var field = document.getElementById("button-bar");
+fieldvalue= field.value;
+  };
+
+  fileone.addEventListener( "change", function(e)	{
+    var fileName = "";
+    try {
+      if (this.files && this.files.length > 1 )
+        fileName = ( this.getAttribute( "data-multiple-caption" ) || "" ).replace( "{count}", this.files.length );
+      else
+        fileName = e.target.value.split( "\\" ).pop();
+      
+      if(fileName) {
+        fileonelabel.querySelector( "span" ).innerHTML = fileName;
+      } else {
+        fileonelabel.innerHTML = labelVal;
+      }
+    } catch (err) {
+      notifyError("Error", err);
+    } finally {
+      buttonGo();
+    }
+  });
 
   setTheme("dark");
 
@@ -108,13 +156,13 @@ const themes = {
     static pxToRem(pixelValue) {
       //document.documentElement is the reference to rem and not document.body
       // test with html {font-size: 18px} and body {font-size: 14px}, 1rem = 18px
-      const fontSize = 1 / parseFloat(window.getComputedStyle(document.documentElement).getPropertyValue('font-size'));
-      const newValue = pixelValue * fontSize;
+      var fontSize = 1 / parseFloat(window.getComputedStyle(document.documentElement).getPropertyValue('font-size'));
+      var newValue = pixelValue * fontSize;
       return newValue;
     }
   
     static dimToPx(elem, property) { //cf https://www.w3.org/TR/css-cascade-3/#computed
-      const prop = window.getComputedStyle(elem, null).getPropertyValue(property);
+      var prop = window.getComputedStyle(elem, null).getPropertyValue(property);
       if (prop.slice(-2) === "px") {
         return parseInt(prop);
       } else if (prop.slice(-1) === "%") {
@@ -208,7 +256,7 @@ const themes = {
     }
     
     _calcValue(value) {
-      const total = this.$totalSize;
+      var total = this.$totalSize;
       if (total > 0) 
         return Math.round(value * 10000 / total)/100;
       else
@@ -239,7 +287,7 @@ const themes = {
       if (this.$fixedPosition) {
         this.$maxSize = this._getDimension(pane1);
       } else {
-        const maxStyle = Splitter.dimToPx(pane1,`max-${this.$cssOrient}`);
+        var maxStyle = Splitter.dimToPx(pane1,`max-${this.$cssOrient}`);
         if (maxStyle === 0 || this.$totalSize <= maxStyle) {
           this.$maxSize = this.$totalSize;
         } else {
@@ -315,8 +363,8 @@ const themes = {
     }
     
     _touchSwipe(event) {
-      const delta = this.$drag - this.$touchOrigin;
-      const elapsedTime = new Date().getTime() - this.$startTime;
+      var delta = this.$drag - this.$touchOrigin;
+      var elapsedTime = new Date().getTime() - this.$startTime;
       if (elapsedTime <= this.$allowedTime && Math.abs(delta) >= this.$threshold)
         return (delta < 0)? 'min' : 'max' ;
       else
@@ -327,10 +375,10 @@ const themes = {
       if (this.$isMoving === true) {
         event.preventDefault();
         let delta;
-        const size = this._getDimension(this.$pane1);
+        var size = this._getDimension(this.$pane1);
         this.$elem.removeEventListener('touchmove',this._onTouchMove);
         
-        const swipe = this._touchSwipe(event);
+        var swipe = this._touchSwipe(event);
         if (swipe !== "none") {
           if (swipe === "min") { 
             delta = this.$minSize - size;
@@ -354,7 +402,7 @@ const themes = {
   
     _onTouchMove(event) {
       event.preventDefault();
-      const current = event.targetTouches[0][this.$mouseOrient];
+      var current = event.targetTouches[0][this.$mouseOrient];
       this._setPane(current - this.$drag);
       
       this.$drag = current;
@@ -374,7 +422,7 @@ const themes = {
       if (this.$isMoving === true) {
         event.preventDefault();
         document.removeEventListener('mousemove',this._onMouseMove);
-        const size = this._getDimension(this.$pane1);
+        var size = this._getDimension(this.$pane1);
         if (this.$fixedPosition && (size !== this.$minSize || size !== this.$maxSize)) {
       let delta;
           if (size <= this.$maxSize/2) {
@@ -390,7 +438,7 @@ const themes = {
     
     _onMouseMove(event) {
       event.preventDefault();
-      const current = event[this.$mouseOrient];
+      var current = event[this.$mouseOrient];
       this._setPane(current - this.$drag);
       this.$drag = current;
     }
@@ -421,7 +469,7 @@ const themes = {
             this._keyArrow(-1);
           break;
         case "Enter":
-          const size = this._getDimension(this.$pane1);
+          var size = this._getDimension(this.$pane1);
           if (Math.abs(size - this.$minSize) >= 1) { // relative unit is approximative
         this._setPane(this.$minSize - size);
             this.$oldSize = size;
@@ -452,3 +500,23 @@ const themes = {
   
   var splitterH = new Splitter("splitterH");
   var splitterV = new Splitter("splitterV");
+
+  function viewCode(e) {
+    document.getElementById('pre').innerText = e.target.parentElement.previousElementSibling.innerHTML;
+    document.getElementById("popup").style.opacity = 1;
+    // document.getElementById("overlay").style.opacity = 0.8;
+    document.getElementById("popup").style.display = "block";
+    // document.getElementById("overlay").style.display = "block";
+  }
+
+  popupClose.onclick = function(e) { 
+    document.getElementById("popup").style.opacity = 0;
+    // document.getElementById("overlay").style.opacity = 0;
+    setTimeout(function() {
+    document.getElementById("popup").style.display = "none";
+    // document.getElementById("overlay").style.display = "none";
+  }, 1000);
+  
+};
+
+
