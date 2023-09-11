@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>patrom</title>
     <meta name="viewport" content="user-scalable=no,initial-scale = 1.0,maximum-scale = 1.0">
-    <link rel="stylesheet" type="text/css" href="../dist/full.min.css">
+    <link rel="stylesheet" type="text/css" href="../dist/patrom.min.css">
     <link rel="stylesheet" type="text/css" href="./demo.css">
   </head>
   <body>
@@ -21,7 +21,7 @@
           <h1>patrom</h1>
           <p>CSS for mario35 apps</p>
           <label class="patrom-switch">
-            <input id="theme" type="checkbox" class="patrom-switch__input" checked>
+            <input id="theme" type="checkbox" class="patrom-switch__input" onchange="toggleTheme()">
             <div class="patrom-switch__theme"></div>
           </label>
           <div id="pageNav">
@@ -78,6 +78,12 @@
                 <a href="#range">Range</a>
               </li>
               <li>
+                <a href="#select">Select</a>
+              </li>
+              <li>
+                <a href="#multiSelect">Multi Select</a>
+              </li>
+              <li>
                 <a href="#switch">Switch</a>
               </li>
               <li>
@@ -88,6 +94,9 @@
               </li>
               <li>
                 <a href="#text-input">Text input</a>
+              </li>
+              <li>
+                <a href="#date-time">Date input</a>
               </li>
               <li>
                 <a href="#large-textinput">Large Text Input</a>
@@ -109,9 +118,6 @@
               </li>
               <li>
                 <a href="#icons">Icons</a>
-              </li>
-              <li>
-                <a href="#splitter">Splitter</a>
               </li>
               <li>
                 <a href="#fileLoader">Load file</a>
@@ -148,15 +154,16 @@
               <h2>Large Button Bar</h2>
             </header>
             <section class="component">
+
               <div class="patrom-button-bar">
                 <div class="patrom-button-bar__item">
-                  <button class="patrom-button-bar__button button-lg">One</button>
+                  <button class="patrom-button-bar__button size-lg">One</button>
                 </div>
                 <div class="patrom-button-bar__item">
-                  <button class="patrom-button-bar__button button-lg">Two</button>
+                  <button class="patrom-button-bar__button size-lg">Two</button>
                 </div>
                 <div class="patrom-button-bar__item">
-                  <button class="patrom-button-bar__button button-lg">Three</button>
+                  <button class="patrom-button-bar__button size-lg">Three</button>
                 </div>
               </div>
             </section>
@@ -169,10 +176,10 @@
               <h2>Button</h2>
             </header>
             <section class="component">
-              <button class="patrom-button button-xs">very small</button>
-              <button class="patrom-button button-sm">small</button>
+              <button class="patrom-button size-xs">very small</button>
+              <button class="patrom-button size-sm">small</button>
               <button class="patrom-button">normal</button>
-              <button class="patrom-button button-lg">large</button>
+              <button class="patrom-button size-lg">large</button>
               <button class="patrom-button" disabled>disabled</button>
             </section>
             <footer>
@@ -377,6 +384,17 @@
               <button class="code" onclick="viewCode(event);" type="button"></button>
             </footer>
           </article>
+          <article id="context-menu" class="component">
+            <header>
+              <h2>Context menu</h2>
+            </header>
+            <section class="component">
+              <h3 id="contextDemo">click contextual menu</h3>
+            </section>
+            <footer>
+              <button class="code" onclick="viewCode(event);" type="button"></button>
+            </footer>
+          </article>
           <article id="icon-button" class="component">
             <header>
               <h2>Icon Button</h2>
@@ -415,10 +433,10 @@
               <h2>Large Icon Button</h2>
             </header>
             <section class="component">
-              <button class="patrom-icon-button button-lg">
+              <button class="patrom-icon-button size-lg">
                 <span class="icon-css3"></span>
               </button>
-              <button class="patrom-icon-button button-lg" disabled>
+              <button class="patrom-icon-button size-lg" disabled>
                 <span class="icon-node-dot-js"></span>
               </button>
             </section>
@@ -431,10 +449,10 @@
               <h2>Large Quiet Icon Button</h2>
             </header>
             <section class="component">
-              <button class="patrom-icon-button button-lg--quiet">
+              <button class="patrom-icon-button size-lg--quiet">
                 <span class="icon-css3"></span>
               </button>
-              <button class="patrom-icon-button button-lg--quiet" disabled>
+              <button class="patrom-icon-button size-lg--quiet" disabled>
                 <span class="icon-node-dot-js"></span>
               </button>
             </section>
@@ -500,6 +518,7 @@
               <button class="code" onclick="viewCode(event);" type="button"></button>
             </footer>
           </article>
+
           <article id="select" class="component">
             <header>
               <h2>Select</h2>
@@ -515,7 +534,58 @@
               <button class="code" onclick="viewCode(event);" type="button"></button>
             </footer>
           </article>
+
+          <article id="multiSelect" class="component">
+            <header>
+              <h2>multiselect</h2>
+            </header>
+            <section class="component">
+              <h4>with selectAll option</h4>
+              <button onclick="changeContentMultiSelect()">Change content</button>
+              <select class="patrom-multiselect" id="essai" selectAll="true" placeholder="mario" multiple="multiple">
+                <option value="HTML" selected>HTML</option>
+                <option value="CSS" selected>CSS</option>
+                <option value="MySql">MySql</option>
+                <option value="XML">XML</option>
+                <option value="JSON">JSON</option>
+                <option value="YAML">YAML</option>
+                <option value="MongoDB">MongoDB</option>
+                <option value="SQLite">SQLite</option>
+              </select>
+              <button onclick="getContentMultiSelect()">get Values</button>
+            
+              <select class="patrom-multiselect" id="2" placeholder="adam"  >
+                <option value="HTML" selected>HTML</option>
+                <option value="CSS" selected>CSS</option>
+                <option value="MySql">MySql</option>
+                <option value="XML">XML</option>
+                <option value="JSON">JSON</option>
+                <option value="YAML">YAML</option>
+                <option value="MongoDB">MongoDB</option>
+                <option value="SQLite">SQLite</option>
+              </select>
+
+              <select class="patrom-multiselect" id="selectOrder" selectAll="true" orderby="true" placeholder="sensorthings"  >
+                <option >Things</option>
+                <option >Locations</option>
+                <option >HistoricalLocations</option>
+                <option >ObservedProperties</option>
+                <option >Sensors</option>
+                <option >Datastreams</option>
+                <option >MultiDatastreams</option>
+                <option >Observations</option>
+                <option >HistoricalObservations</option>
+                <option >ThingsLocations</option>
+                <option >Loras</option>
+                <option >Decoders</option>
+              </select>
+              <button onclick="getContentMultiSelectOrder()">get Values</button>
+            </section>
+            <footer>
+              <button class="code" onclick="viewCode(event);" type="button"></button>
+            </footer>
           </article>
+
           <article id="switch" class="component">
             <header>
               <h2>Switch</h2>
@@ -601,18 +671,36 @@
               <button class="code" onclick="viewCode(event);" type="button"></button>
             </footer>
           </article>
+
+          <article id="date-time" class="component">
+            <header>
+              <h2>Date input</h2>
+            </header>
+            <section class="component">
+              <h2>Date</h2>
+              <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+              <h2>Date Time input</h2>
+              <input type="datetime-local" />
+              <h2>Date Time input with value, min & Max</h2>
+              <input type="datetime-local" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00" />
+            
+            </section>
+            <footer>
+              <button class="code" onclick="viewCode(event);" type="button"></button>
+            </footer>
+          </article>
           <article id="large-textinput" class="component">
             <header>
               <h2>Large Text Input</h2>
             </header>
             <section class="component">
-              <input type="text" class="patrom-text-input button-lg" value="" placeholder="text">
+              <input type="text" class="patrom-text-input size-lg" value="" placeholder="text">
               <br>
               <br>
-              <input type="text" class="patrom-text-input button-lg" value="" placeholder="text" disabled>
+              <input type="text" class="patrom-text-input size-lg" value="" placeholder="text" disabled>
               <br>
               <br>
-              <input type="text" class="patrom-text-input button-lg" placeholder="text" value="fail" pattern="not-fail">
+              <input type="text" class="patrom-text-input size-lg" placeholder="text" value="fail" pattern="not-fail">
             </section>
             <footer>
               <button class="code" onclick="viewCode(event);" type="button"></button>
@@ -702,6 +790,11 @@
                   <input type="checkbox" id="chck2">
                   <label class="patrom-tab-label" for="chck2">Item 2</label>
                   <div class="patrom-tab-content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in! </div>
+                </div>
+                <div class="patrom-tab">
+                  <input type="checkbox" id="chck3" disabled>
+                  <label class="patrom-tab-label" for="chck3">Item 3 (disabled)</label>
+                  <div class="patrom-tab-content"> Lorem ipsum dolor sit amet</div>
                 </div>
               </div>
             </section>
@@ -1041,44 +1134,49 @@
               <button class="code" onclick="viewCode(event);" type="button"></button>
             </footer>
           </article>
-          
-          <article id="splitter" class="component">
+
+          <article id="JsonViewer" class="component">
             <header>
-              <h2>Splitter</h2>
+              <h2>Json Viewer</h2>
             </header>
             <section class="component">
-              <header id="primary">
-                <div class="splitterHead">head</div>
-              </header>
-                <div id="splitterH" class="patrom-splitter" data-pane1="primary" data-pane2="info" data-orientation="horizontal" data-unit="rem" data-position="fixed" aria-labelled-by="title"></div>
-                <section id="info" class="patrom-splitter-container" aria-label="This Window splitter component usage">
-                  <nav id="pane1" class="pane1">
-                    <div class="splitterLeft">pane1</div>
-                  </nav>
-                  <div id="splitterV" class="patrom-splitter" data-pane1="pane1" data-pane2="pane2" aria-labelled-by="toc" ></div>
-                  <main id="pane2" class="pane2">
-                    <div class="splitterRight">pane2</div>
-                  </main>
-                </section>
+                <p>Choose action:</p>
+                <div>
+                  <button type="button" class="load-json">Load JSON</button>
+                  <button type="button" class="collapse">Collapse to level 1</button>
+                  <button type="button" class="maxlvl">Show JSON to level 1</button>
+                </div>
+                <h2>Output:</h2>
+                <div id="json"></div>
+              </section>
             <footer>
               <button class="code" onclick="viewCode(event);" type="button"></button>
             </footer>
-                
-                </body>
-                </html>
-  
-                
+          </article> 
+
+          <article id="table" class="component">
+            <header>
+              <h2>Table</h2>
+            </header>
+            <section class="component">
+
+              
+              <div id="tableDemo" class="patrom-table-container">
+
               </div>
-            </section>
+              
+
+              
+              </section>
             <footer>
               <button class="code" onclick="viewCode(event);" type="button"></button>
             </footer>
-          </article>
+          </article> 
+
         </div>
         <footer></footer>
       </div>
     </div>
-    <script src="../dist/css.js"></script>
-    
+    <script src="js/patrom.js"></script>
   </body>
 </html>

@@ -1,0 +1,64 @@
+
+  .patrom-table-container table {
+    position: relative;
+    font-size: var(--font-size);    
+    border: none;
+    border-collapse: collapse;
+  }
+  
+  .patrom-table-container tr:nth-child(even) {
+    background: var(--table-even-background); 
+    
+  } 
+
+  .patrom-table-container tr:nth-child(odd) {
+    background: var(--table-odd-background); 
+  } 
+
+  .patrom-table-container tr:hover {
+    background: var(--table-hover-background); 
+  } 
+  
+  .patrom-table-container td
+  {
+    color: var(--text-color);    
+    white-space: nowrap;    
+  }
+
+  .patrom-table-container th {
+    border-bottom: solid 1px var(--button-border);
+    color: var(--text-color);
+    padding: 1px;
+    white-space: nowrap;
+  }
+  
+  .patrom-table-container thead th {
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    min-height: var(--font-size);
+    height: var(--font-size-half);
+    top: 0;
+    min-width: 50px;
+    background: var(--table-head-background);
+    color: var(--text-color);
+  }
+  
+  .patrom-table-container thead th {
+    top: 0;
+    z-index: 1;
+  }
+
+  .patrom-table-container thead th:first-child {
+    left: 0;
+    z-index: 1;
+  }
+
+  .patrom-table-container tbody th {
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;  
+    left: 0;
+    min-width: 20px; 
+    height: var(--font-size-half);
+    background: var(--table-head-background);
+  }
+  

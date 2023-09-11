@@ -76,7 +76,7 @@
 .patrom-switch__theme:before {
   content: 'Dark';
   /* color: var(--background-highlight); */
-  background-color: var(--body-background);
+  background-color: var(--background-body);
   right: 0.8rem;
   padding-left: 0.75rem;
 }
@@ -104,7 +104,7 @@
 
 .patrom-switch__theme:after {
   content: 'Light';
-  background-color: var(--body-backgroundd);
+  background-color: var(--background-bodyd);
   left: 0.8rem;
   padding-left: 0.6rem;
 }

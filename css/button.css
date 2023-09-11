@@ -16,24 +16,6 @@
   border: 1px solid transparent;
 }
 
-.button-xs {
-  padding: 1px 2px;
-  font-size: 0.6rem;
-}
-.button-sm {
-  padding: 2px 3px;
-  font-size: 0.8rem;
-}
-.button-lg {
-  padding: 4px 6px;
-  font-size: 1.2rem;
-}
-
-.button-big {
-  padding: 6px 8px;
-  font-size: 1.4rem;
-}
-
 .patrom-button:hover,
 .patrom-button-bar__button:hover {
   background-color:rgba(0, 0, 0, 0.2);

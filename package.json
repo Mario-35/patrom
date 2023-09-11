@@ -4,7 +4,7 @@
   "description": "css theme",
   "main": "build.js",
   "scripts": {
-    "build": "node .\\build.js && css-minify -f ./dist/full.css -o ./dist/"
+    "build": "node .\\build.js && css-minify -f ./dist/patrom.css -o ./dist/"
   },
   "author": "ADAM Mario",
   "license": "ISC"

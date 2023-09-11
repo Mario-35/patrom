@@ -1,0 +1,106 @@
+/**
+ * Css for Query.
+ *
+ * @copyright 2023-present Inrae
+ * @author mario.adam@inrae.fr
+ *
+ */
+
+ 
+.patrom-cm-container{
+    position: fixed;
+    z-index: 13;
+    opacity: 0;
+    transform: scale(0);
+    transition: transform 0.1s;
+    transform-origin: top left;
+    padding: 0;
+  }
+  
+ .patrom-cm-container.display{
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+ .patrom-cm-container,.patrom-cm-container *{
+    box-sizing: border-box;
+  }
+  
+ .patrom-cm-container *{
+    position: relative;
+  }
+  
+ .patrom-cm-container ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--context-menu-background);
+    box-shadow: 0 0 5px #333;
+  }
+  
+ .patrom-cm-container li{
+    padding: 5px 10px;
+    padding-right: 1.7em;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+ .patrom-cm-container li:hover{
+    background-color: var(--context-menu-hover);
+  }
+  
+  
+ .patrom-cm-container li.patrom-cm-sub_span{
+    width: 1em;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    right: 0.5em;
+    transform: translateY(-50%);
+  }
+  
+ .patrom-cm-container li > ul{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    transition: opacity 0.2s;
+    visibility: hidden;
+  }
+  
+ .patrom-cm-container li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+  }
+  
+ .patrom-cm-container li.cm_divider{
+    border-bottom: 1px solid var(--button-border);
+    margin: 5px;
+    padding: 0;
+    cursor: default;
+  }
+  
+ .patrom-cm-container li.cm_divider:hover{
+    background-color: inherit;
+  }
+  
+ .patrom-cm-container.cm_border_right > ul ul{
+    left: unset;
+    right: 100%;
+  }
+  
+ .patrom-cm-container.cm_border_bottom > ul ul{
+    top: unset;
+    bottom: 0;
+  }
+  
+ .patrom-cm-container li[disabled=""]{
+    color: var(--text-color-disabled);
+    cursor: default;
+  }
+  
+ .patrom-cm-container li[disabled=""]:hover{
+    background-color: inherit;
+  }
+  

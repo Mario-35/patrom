@@ -3,15 +3,15 @@
   display: inline-block;
 }
 
-.patrom-multi-select li .buttonPipo-all {
-  font-size: var(--font-size-2);
+.patrom-multi-select li .buttonMini-all {
+  font-size: var(--font-size-less-2);
   vertical-align: top;
 
   /* height:  var(--font-size-half); */
   color: var(--btn-success-active-background);
 }
-.patrom-multi-select li .buttonPipo-none {
-  font-size: var(--font-size-2);
+.patrom-multi-select li .buttonMini-none {
+  font-size: var(--font-size-less-2);
   vertical-align: top;
 
   /* height:  var(--font-size-half); */
@@ -54,12 +54,9 @@
   margin-bottom: 1px;
 }
 .patrom-multi-select-container .logger .selectedLabels {
-  /* padding: 1px 6px 1px 6px; */
-  background: var(--input-background);
-  border: 1px solid var(--select-border-top); 
   border-radius: 25px;
   display: inline-block;
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-less-2);
 }
 .patrom-multi-select-container .closeBtn {
   padding-left: 2px;

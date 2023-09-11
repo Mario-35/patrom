@@ -7,14 +7,40 @@ input[type="checkbox"] {
   border: none;
 }
 
-input[type=checkbox]:after {
-  content: "\00a0\00a0";
-
+input[type=checkbox].orderby:after {
+  content: "";
 }
-input[type=checkbox]:checked:after {
+
+input[type=checkbox].orderby:checked:after {
+  content: "";
+}
+
+.patrom-multi-select input[type=checkbox]:after {
+  content: "\00a0\00a0";
+}
+
+.checked input[type=checkbox]:checked:after {
   content: "✔";
   color: var(--btn-success-active-background);
 }
+
+.orderby input[type=checkbox][order="asc"]:checked:after {
+  content: "↓";
+  color: var(--btn-success-active-background);
+}
+
+.orderby input[type=checkbox][order="desc"]:checked:after {
+  content: "↑";
+  color: var(--btn-danger-active-background);
+}
+
+input[type=checkbox]:disabled+label {
+  background: var(--background-color-disabled);
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+
 
 /* Customize the label (the patrom-checkbox) */
 .patrom-checkbox-labeled {

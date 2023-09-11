@@ -30,7 +30,7 @@ h1 {
   left: -4px;
   height: 100%;
   width: 4px;
-  background: var(--body-background);
+  background: var(--background-body);
 }
 #site.open {
   transform: translate3d(250px, 0, 0);
@@ -43,7 +43,7 @@ pre {
 /* Main Header */
 #main-header {
   color: var(--text-color);
-  background: var(--body-background);
+  background: var(--background-body);
   height: 98px;
   padding: 10px 20px;
   position: relative;
@@ -151,7 +151,7 @@ article.component {
   padding-right: 10px;
 }
 body #content header h2 {
-  background: var(--body-background);
+  background: var(--background-body);
 }
 
 #content header{
@@ -192,7 +192,7 @@ section.examples li {
 }
 /* Side Nav */
 #sideNav {
-  background: var(--body-background);
+  background: var(--background-body);
   position: absolute;
   width: 100%;
   z-index: 1;
@@ -207,7 +207,7 @@ section.examples li {
 #sideNav li a {
   color: var(--text-color);
   display: block;
-  height: 46px;
+  height: 22px;
   font-size: 16px;
   padding: 12px 0 0 20px;
   text-decoration: none;
@@ -314,8 +314,7 @@ select.docNav {
   }
   #sideNav li a {
     display: block;
-    height: 60px;
-    padding: 22px 0 0 10px;
+    padding: 12px 0 0 10px;
     text-decoration: none;
   }
   #content header h2 {
@@ -435,4 +434,11 @@ select.docNav {
 
 .code:after {
   content: "view this example code";
+}
+
+.patrom-table-container {
+  max-width: 100em;
+  max-height: 30em;
+  overflow: scroll;
+  position: relative;
 }

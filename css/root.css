@@ -32,9 +32,6 @@
 }
 
 
-
-
-
 @font-face {
   font-family: 'icomoon';
   src:  url('./icon/icomoon.eot?wqupk0');
@@ -51,7 +48,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: var(--body-background);
+  background: var(--background-body);
   color: var(--text-color);
   font-size: var(--font-size);
 }
@@ -116,3 +113,25 @@ body {
   overflow: hidden;
 }
 
+.size-default {
+  padding: 2px 3px;
+  font-size: 1rem;
+}
+
+.size-xs {
+  padding: 1px 2px;
+  font-size: 0.6rem;
+}
+.size-sm {
+  padding: 2px 3px;
+  font-size: 0.8rem;
+}
+.size-lg {
+  padding: 4px 6px;
+  font-size: 1.2rem;
+}
+
+.size-big {
+  padding: 6px 8px;
+  font-size: 1.4rem;
+}

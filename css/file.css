@@ -8,16 +8,15 @@
 }
 
 .inputfile+label {
-	font-size: 1em;
-	font-weight: 150;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	cursor: pointer;
 	display: inline-block;
-	padding: 0.35rem 0.65rem;
+	padding: 2px 3px;
+	font-size: 1rem;
     background-color: var(--background-color);
     border: 1px solid var(--btn-gray-border);
-    border-radius: 4px;
+    /* border-radius: 4px; */
 }
 
 .no-js .inputfile+label {

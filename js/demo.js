@@ -42,8 +42,6 @@ function getContentMultiSelect() {
 function getContentMultiSelectOrder() {
         alert(multiSelects['selectOrder'].getData());
   }
-  
-if(JSONViewer) {
 
   var jsonObj = {};
   var jsonViewer = new JSONViewer();
@@ -149,5 +147,40 @@ if(JSONViewer) {
   maxlvlBtn.addEventListener("click", function() {
     jsonViewer.showJSON(jsonObj, 1);
   });
-}
 
+
+
+
+const menuitems = [
+  {
+    "text": "context one",
+    "events": { // Adds eventlisteners to the item (you can use any event there is)
+      "click": function(e){
+        console.log("context one");
+      }
+    }
+  },
+  {
+    "text": "context too",
+    "events": {
+      "click": function(e){
+        console.log("context one");
+      }
+    }
+  },
+  {
+    "text": "context disabled",
+    "enabled": false,
+    "events": {
+      "click": function(e){
+        console.log("not possible");
+      }
+    }
+  }
+];
+
+var menu = new ContextMenu(menuitems);
+
+contextDemo.addEventListener("contextmenu", function(e){
+  menu.display(e);
+});

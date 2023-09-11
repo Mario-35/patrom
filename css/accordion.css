@@ -31,7 +31,7 @@
     max-height: 0;
     padding: 0 12px;
     color: var(--content-color);
-    background-color: var(--content-background);
+    background-color: var(--background-content);
     border: 1px solid 1px solid rgb(105, 105, 105);
     transition: all 0.35s;
 

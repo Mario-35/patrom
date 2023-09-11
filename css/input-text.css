@@ -52,3 +52,7 @@
 .patrom-text-input:invalid {
   border: 1px solid var(--invalid-colour);
 }
+
+.pop {
+  color: #7e8080
+}
